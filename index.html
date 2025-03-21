@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Memory Game</title>
+
+    <meta
+      name="description"
+      content="Play this interactive memory game and challenge your brain! Match pairs of cards and score points. Enjoy a dynamic and engaging gaming experience."
+    />
+    <meta
+      name="keywords"
+      content="memory game, interactive game, web game, card matching game, brain game, JavaScript game, Tailwind CSS, HTML, CSS"
+    />
+    <meta name="author" content="Sibel Bouzo" />
+
+    <meta property="og:title" content="Memory Game | Interactive Web Game" />
+    <meta
+      property="og:description"
+      content="Play this interactive memory game and challenge your brain! Match pairs of cards and score points. Enjoy a dynamic and engaging gaming experience."
+    />
+    <meta property="og:image" content="images/logo.jpg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="game-container">
+      <div class="info flex justify-between items-center p-4 w-full">
+        <div class="score">Score: <span class="font-bold">0</span></div>
+        <div class="tries"><span class="font-bold">0</span> Wrong Tries</div>
+      </div>
+      <div class="boxes py-4 px-10 grid grid-cols-4 gap-2.5">
+        <div class="box" data-r="a">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="b">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="c">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="d">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="e">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="f">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="g">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-7.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="h">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-8.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="a">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="b">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="c">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="d">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="e">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="f">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="g">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-7.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box" data-r="h">
+          <div class="front face"></div>
+          <div class="back face">
+            <img src="images/Char-8.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="congratulations hidden text-center p-4">
+        <h2 class="text-xl font-semibold">Congratulations! 🏆</h2>
+        <p>You've successfully completed the game. You're a memory champion!</p>
+        <button class="retry bg-blue-500 text-white px-4 py-2 rounded mt-4">
+          Play Again
+        </button>
+      </div>
+
+      <div class="game-over hidden text-center p-4">
+        <h2 class="text-xl font-semibold">Game Over!</h2>
+        <p>Ready to challenge yourself again?</p>
+        <button class="retry bg-blue-500 text-white px-4 py-2 rounded mt-4">
+          Retry
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

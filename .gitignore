@@ -1,0 +1,5 @@
+# Ignore Terraform-related binaries and cache
+.terraform/
+*.exe
+*.zip
+*.tar.gz
